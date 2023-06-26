@@ -9,7 +9,7 @@ def convert_range_to_list(range_str):
             pos_list.extend(list(range(int(start), int(end)+1)))
         else:
             pos_list.append(int(r))
-    return ' '.join(map(pos_list))
+    return ' '.join(map(str, pos_list))
 
 def main(args):
     import glob
