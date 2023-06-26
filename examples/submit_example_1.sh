@@ -7,7 +7,7 @@
 
 source activate mlfold
 
-folder_with_pdbs="../inputs/PDB_monomers/pdbs/"
+folder_with_pdbs="../inputs/PDB_monomers/pdbs"
 
 output_dir="../outputs/example_1_outputs"
 if [ ! -d $output_dir ]
