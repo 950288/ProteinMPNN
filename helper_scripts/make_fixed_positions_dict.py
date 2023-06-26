@@ -1,5 +1,16 @@
 import argparse
 
+def convert_range_to_list(range_str):
+    pos_list = []
+    ranges = range_str.split()
+    for r in ranges:
+        if "-" in r:
+            start, end = r.split("-")
+            pos_list.extend(list(range(int(start), int(end)+1)))
+        else:
+            pos_list.append(int(r))
+    return ' '.join(map(pos_list))
+
 def main(args):
     import glob
     import random
@@ -10,7 +21,7 @@ def main(args):
     with open(args.input_path, 'r') as json_file:
         json_list = list(json_file)
     
-    fixed_list = [[int(item) for item in one.split()] for one in args.position_list.split(",")]
+    fixed_list = [[int(item) for item in convert_range_to_list(one).split()] for one in args.position_list.split(",")]
     global_designed_chain_list = [str(item) for item in args.chain_list.split()]
     my_dict = {}
     
