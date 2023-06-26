@@ -2,7 +2,7 @@ import argparse
 
 def main(args):
     pos_list = []
-    ranges = args.range.split()
+    ranges = args.design_only_positions.split()
     for r in ranges:
         if "-" in r:
             start, end = r.split("-")
