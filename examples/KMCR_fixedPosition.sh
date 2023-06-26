@@ -19,7 +19,7 @@ fi
 path_for_parsed_chains=$output_dir"/parsed_pdbs.jsonl"
 path_for_assigned_chains=$output_dir"/assigned_pdbs.jsonl"
 path_for_fixed_positions=$output_dir"/fixed_pdbs.jsonl"
-chains_to_design="A C"
+chains_to_design="A"
 #The first amino acid in the chain corresponds to 1 and not PDB residues index for now.
 fixed_positions="100 127 165 169" #fixing/not designing residues 1 2 3...25 in chain A and residues 10 11 12...40 in chain C
 
