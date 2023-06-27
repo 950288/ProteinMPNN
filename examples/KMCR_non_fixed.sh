@@ -34,7 +34,7 @@ python ../protein_mpnn_run.py \
         --chain_id_jsonl $path_for_assigned_chains \
         --fixed_positions_jsonl $path_for_fixed_positions \
         --out_folder $output_dir \
-        --num_seq_per_target 2 \
+        --num_seq_per_target 10 \
         --sampling_temp "0.1" \
         --seed 37 \
         --batch_size 1
