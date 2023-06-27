@@ -21,7 +21,7 @@ path_for_assigned_chains=$output_dir"/assigned_pdbs.jsonl"
 path_for_fixed_positions=$output_dir"/fixed_pdbs.jsonl"
 chains_to_design="A"
 #The first amino acid in the chain corresponds to 1 and not PDB residues index for now.
-design_only_positions="8-13 33 37 55-57 59 81-85 99 125-128 165 169 197-200 215 217" #design only these residues; use flag --specify_non_fixed
+design_only_positions="8-13 33 37 55-57 59 81-85 99 125-126 128 197-200 215 217" #design only these residues; use flag --specify_non_fixed
 
 python ../helper_scripts/parse_multiple_chains.py --input_path=$folder_with_pdbs --output_path=$path_for_parsed_chains
 
